@@ -4,28 +4,28 @@ c = input('Выберите действие:\n1-сложение\n2-вычит�
 
 def add(x,y):
     z = int(x) + int(y)
-    print(str(x) + '+' + str(y) + '=' + str(z))
     return z
 def sub(x,y):
     z = int(x) - int(y)
-    print(str(x) + '-' + str(y) + '=' + str(z))
     return z
 def mul(x,y):
     z = int(x) * int(y)
-    print(str(x) + 'x' + str(y) + '=' + str(z))
     return z
 def div(x,y):
     z = int(x) / int(y)
-    print(str(x) + '/' + str(y) + '=' + str(z))
     return z
 if c == '1':
-    add(a,b)
+    result=add(a,b)
+    print(str(a) + '/' + str(b) + '=' + str(result))
 elif c == '2':
-    sub(a,b)
+    result=sub(a,b)
+    print(str(a) + '-' + str(b) + '=' + str(result))
 elif c == '3':
-    mul(a,b)
+    result=mul(a,b)
+    print(str(a) + 'x' + str(b) + '=' + str(result))
 elif c == '4':
-    div(a,b)
+    result=div(a,b)
+    print(str(a) + '/' + str(b) + '=' + str(result))
 else:
     print('Нет такого действия(')
 
