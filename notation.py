@@ -9,10 +9,13 @@ for i in range(0, len(stack0)):
         if k != 0:
             check = False
             break
+        elif k == 0:
+            check = True
+
 numbers = list()
 signs = list()
 i = 0
-if check == False:
+if check == True:
     for i in range(0, len(stack0)):
         if stack0[i].isdigit() == True:
             numbers.append(stack0[i])
