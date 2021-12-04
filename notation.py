@@ -1,6 +1,4 @@
-def evaluate_expression(expression):
-    string = expression
-
+def evaluate_expression(string):
     def converting(string):
         stack0 = list()
         stack1 = list()
