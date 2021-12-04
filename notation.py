@@ -1,5 +1,5 @@
-def go():
-    string = input('Ввод ')
+def evaluate_expression(expression):
+    string = expression
 
     def converting(string):
         stack0 = list()
@@ -111,8 +111,9 @@ def go():
         a = numbers.pop()
         return a
 
-    print(string + '=' + str(counting(converting(string))))
+    return counting(converting(string))
 
 
 if __name__ == '__main__':
-    go()
+    a = input('Введите выражение: ')
+    print(a + '=' + str(evaluate_expression(a)))
